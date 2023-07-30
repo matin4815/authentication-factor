@@ -1,0 +1,14 @@
+server:
+  port: 7894
+
+spring:
+  datasource:
+    url: jdbc:h2:file:./src/main/resources/data/demo;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE
+    driver-class-name: org.h2.Driver
+    username: sys
+    password: Aa123456
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: false
+    hibernate:
+      ddl-auto: create-drop
